@@ -1,0 +1,17 @@
+{
+    "name": "Asad Alexa",
+    "description": "Asad Alexa Is Telegram Advanced Bot To Mention All Members In Group.",
+    "logo": "https://telegra.ph/file/cb76d7f5dae14ec1e11c7.jpg",
+    "env": {
+        "TOKEN": {
+            "description": "Enter bot token."
+        },
+        "APP_ID": {
+            "description": "Get this value from my.telegram.org! Please do not steal."
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org! Please do not steal."
+        }
+    },
+    "buildpacks": [{"url": "heroku/python"}]
+}
