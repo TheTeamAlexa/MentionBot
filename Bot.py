@@ -1,7 +1,7 @@
 # A Powerful Music And Management Bot
 # Property Of Rocks Indian Largest Chatting Group
 # Rocks © @Dr_Asad_Ali © Rocks
-# Owner Asad Ali + Harshit Sharma + Abhimanyu Singh + Krishna Ki Diwani
+# Owner Asad Ali + Kattai Massom + Abhimanyu Singh
 
 
 import os, logging, asyncio
@@ -45,10 +45,10 @@ async def start(event):
             ],
             [
                 Button.url("☀︎︎ ɢʀᴏᴜᴘ ☀︎︎︎", "https://t.me/Shayri_Music_Lovers"),
-                Button.url("☀︎︎ ᴄʜᴀɴɴᴇʟ ☀︎︎", "https://t.me/AsadSupport"),
+                Button.url("☀︎︎ ᴄʜᴀɴɴᴇʟ ☀︎︎", "https://t.me/Alexa_BotUpdates"),
             ],
             [
-                Button.url("☀︎︎ ʙʀᴏ ☀︎︎️️", "https://t.me/HarshitSharma361"),
+                Button.url("☀︎︎ ʙʀᴏ ☀︎︎️️", "https://t.me/Kattai_massom"),
                 Button.url("☀︎︎ ᴋɪɴɢ ☀︎︎︎", "https://t.me/Jankar_Ki_Duniya"),
             ],
         ),
@@ -96,7 +96,7 @@ async def mentionall(event):
     chat_id = event.chat_id
     if event.is_private:
         return await event.respond(
-            "__This command can be use in groups and channels!__"
+            "ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ʙᴇ ᴜsᴇ ɪɴ ɢʀᴏᴜᴘs ᴀɴᴅ ᴄʜᴀɴɴᴇʟs"
         )
 
     is_admin = False
@@ -110,10 +110,10 @@ async def mentionall(event):
         ):
             is_admin = True
     if not is_admin:
-        return await event.respond("__Only admins can mention all!__")
+        return await event.respond("ᴏɴʟʏ ᴀᴅᴍɪɴs ᴄᴀɴ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ")
 
     if event.pattern_match.group(1) and event.is_reply:
-        return await event.respond("__Give me one argument!__")
+        return await event.respond("ɢɪᴠᴇ ᴍᴇ ᴏɴᴇ ᴀʀɢᴜᴍᴇɴᴛ")
     elif event.pattern_match.group(1):
         mode = "text_on_cmd"
         msg = event.pattern_match.group(1)
@@ -122,11 +122,11 @@ async def mentionall(event):
         msg = await event.get_reply_message()
         if msg == None:
             return await event.respond(
-                "__I can't mention members for older messages! (messages which are sent before I'm added to group)__"
+                "ɪ ᴄᴀɴ'ᴛ ᴍᴇɴᴛɪᴏɴ ᴍᴇᴍʙᴇʀs ꜰᴏʀ ᴏʟᴅᴇʀ ᴍᴇssᴀɢᴇs! (ᴍᴇssᴀɢᴇs ᴡʜɪᴄʜ ᴀʀᴇ sᴇɴᴛ ʙᴇꜰᴏʀᴇ ɪ'ᴍ ᴀᴅᴅᴇᴅ ᴛᴏ ɢʀᴏᴜᴘ)"
             )
     else:
         return await event.respond(
-            "__Reply to a message or give me some text to mention others!__"
+            "ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴏʀ ɢɪᴠᴇ ᴍᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴏᴛʜᴇʀs"
         )
 
     spam_chats.append(chat_id)
@@ -181,11 +181,11 @@ async def _(event):
         msg = await event.get_reply_message()
         if msg == None:
             return await event.respond(
-                "__ɪ ᴄᴀɴ'ᴛ ᴍᴇɴᴛɪᴏɴ ᴍᴇᴍʙᴇʀs ꜰᴏʀ ᴏʟᴅᴇʀ ᴍᴇssᴀɢᴇs! (ᴍᴇssᴀɢᴇs ᴡʜɪᴄʜ ᴀʀᴇ sᴇɴᴛ ʙᴇꜰᴏʀᴇ ɪ'ᴍ ᴀᴅᴅᴇᴅ ᴛᴏ ɢʀᴏᴜᴘ)__"
+                "ɪ ᴄᴀɴ'ᴛ ᴍᴇɴᴛɪᴏɴ ᴍᴇᴍʙᴇʀs ꜰᴏʀ ᴏʟᴅᴇʀ ᴍᴇssᴀɢᴇs! (ᴍᴇssᴀɢᴇs ᴡʜɪᴄʜ ᴀʀᴇ sᴇɴᴛ ʙᴇꜰᴏʀᴇ ɪ'ᴍ ᴀᴅᴅᴇᴅ ᴛᴏ ɢʀᴏᴜᴘ)"
             )
     else:
         return await event.respond(
-            "__ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴏʀ ɢɪᴠᴇ ᴍᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴏᴛʜᴇʀs!__"
+            "ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴏʀ ɢɪᴠᴇ ᴍᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴏᴛʜᴇʀs!"
         )
 
     spam_chats.append(chat_id)
@@ -215,13 +215,13 @@ async def _(event):
 @client.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
     if not event.chat_id in spam_chats:
-        return await event.respond("__There is no proccess on going...__")
+        return await event.respond("ᴛʜᴇʀᴇ ɪs ɴᴏ ᴘʀᴏᴄᴄᴇss ᴏɴ ɢᴏɪɴɢ...")
     else:
         try:
             spam_chats.remove(event.chat_id)
         except:
             pass
-        return await event.respond("__Stopped.__")
+        return await event.respond("sᴛᴏᴘᴘᴇᴅ.")
 
 
 print(">> ASAD ALEXA WORKING <<")
